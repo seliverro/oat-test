@@ -8,13 +8,13 @@ services:
       - APP_ENV=${APP_ENV}
       - APP_SECRET=${APP_SECRET}
     volumes:
-      - ../oat-test:/var/www
+      - ../sources:/var/www
 
   nginx:
     build:
       context: ./nginx
     volumes:
-      - ../oat-test:/var/www
+      - ../sources:/var/www
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
       - ./nginx/sites/:/etc/nginx/sites-available
       - ./nginx/conf.d/:/etc/nginx/conf.d
