@@ -21,6 +21,8 @@ class TranslateService
 
     public function Translate(array $questions, string $lang)
     {
+        // TODO: it would be good to cache translated values to minimize addressing Google Translate
+
         $translateFunc = function (Question $question) {
             return $this->TranslateQuestion($question, $this->googleTranslate);
         };

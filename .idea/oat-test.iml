@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="WEB_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/spec" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/tests" isTestSource="true" packagePrefix="App\Tests\" />
+      <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/sources/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/doctrine/annotations" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/doctrine/lexer" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/guzzlehttp/guzzle" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/guzzlehttp/promises" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/container" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/log" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/sensio/framework-extra-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/stichoza/google-translate-php" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/cache" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/cache-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/config" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/console" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/dependency-injection" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/dotenv" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/error-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/event-dispatcher-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/filesystem" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/finder" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/flex" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/framework-bundle" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/http-foundation" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/http-kernel" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/mime" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/polyfill-intl-idn" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/polyfill-mbstring" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/routing" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/service-contracts" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/var-dumper" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/var-exporter" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/yaml" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

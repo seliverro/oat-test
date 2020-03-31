@@ -63,7 +63,7 @@ class CsvQuestionRepository implements IQuestionRepository
 
                 if ($row !== 1) {
                     $question = new Question($data[0], $data[1]);
-                    $question->choices = [new Choice($data[2]), new Choice($data[3]), new Choice($data[4])];
+                    $question->choices = [new Choice($data[2]), new Choice($data[3]), new Choice($data[4])]; // TODO: should be able to work with any choice number
                     array_push($result, $question);
                 }
 
