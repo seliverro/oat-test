@@ -16,7 +16,7 @@ use Symfony\Component\HttpFoundation\File\Exception\NoFileException;
  * Class CsvQuestionRepository
  * @package App\Repository
  * The format of CSV file is: "Question text", "Created At", "Choice 1", "Choice", "Choice 3"
- * We think that there are always 3 choises for each question
+ * We think that there are always 3 choices for each question
  */
 class CsvQuestionRepository implements IQuestionRepository
 {
@@ -57,8 +57,10 @@ class CsvQuestionRepository implements IQuestionRepository
         if (($handle = fopen($this->file, "r")) !== FALSE) {
             while (($data = fgetcsv($handle, 0, ",")) !== FALSE) { // read row
 
+                // TODO: process empty rows correctly
+
                 if (count($data) !== 2 + $this->choiceCount) {
-                    throw new InvalidTypeException("Wrong CSV file format. It should be 5 columns.");
+                    throw new InvalidTypeException("Wrong CSV file format. It should be 5 columns."); // TODO: should be able to work with any choice number
                 }
 
                 if ($row !== 1) {
