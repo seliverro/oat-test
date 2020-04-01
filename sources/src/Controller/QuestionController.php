@@ -8,6 +8,11 @@ use App\Entity\Question;
 use App\Repository\IQuestionRepository;
 use App\Service\TranslateService;
 use InvalidArgumentException;
+use Laminas\Diactoros\ServerRequestFactory;
+use League\OpenAPIValidation\PSR7\Exception\ValidationFailed;
+use League\OpenAPIValidation\PSR7\ServerRequestValidator;
+use League\OpenAPIValidation\PSR7\ValidatorBuilder;
+use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -31,10 +36,19 @@ class QuestionController
      */
     private TranslateService $translateService;
 
+    private $openApiYaml = 'open_api\\open-api.yaml';
+
+    /**
+     * @var ServerRequestValidator
+     */
+    private ServerRequestValidator $validator;
+
     public function __construct(IQuestionRepository $questionRepository, TranslateService $translateService)
     {
         $this->questionRepository = $questionRepository;
         $this->translateService = $translateService;
+
+        $this->validator = (new ValidatorBuilder)->fromYamlFile($this->openApiYaml)->getServerRequestValidator();
     }
 
     /**
@@ -48,7 +62,7 @@ class QuestionController
     {
         // TODO: validate if lang has one possible value
 
-        $questions = $this->questionRepository->GetQuestions();
+        $questions = $this->questionRepository->getQuestions();
         $translated = $this->translateService->Translate($questions, $lang);
 
         //TODO: remove quotes unicoding
@@ -59,9 +73,12 @@ class QuestionController
      * @Route("questions", name="add_question", methods={"POST"})
      * @param Request $request
      * @return JsonResponse
+     * @throws ValidationFailed
      */
-    public function postQuestion(Request $request): JsonResponse
+    public function postQuestion(Request $request): JsonResponse // TODO: replace Request type with ServerRequestInterface type
     {
+        // $match = $this->validator->validate($request); // TODO: use this validation instead of current implementation
+
         $data = json_decode($request->getContent(), true);
 
         $text = $data['text'];
@@ -89,7 +106,7 @@ class QuestionController
         }
         $question->choices = $questionChoices;
 
-        $this->questionRepository->AddQuestion($question);
+        $this->questionRepository->addQuestion($question);
 
         return new JsonResponse(['status' => 'Question created!'], Response::HTTP_CREATED);
     }

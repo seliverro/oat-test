@@ -40,6 +40,21 @@
       <path value="$PROJECT_DIR$/sources/vendor/guzzlehttp/guzzle" />
       <path value="$PROJECT_DIR$/sources/vendor/guzzlehttp/promises" />
       <path value="$PROJECT_DIR$/sources/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/sources/vendor/riverline/multipart-parser" />
+      <path value="$PROJECT_DIR$/sources/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/sources/vendor/respect/validation" />
+      <path value="$PROJECT_DIR$/sources/vendor/dflydev/fig-cookies" />
+      <path value="$PROJECT_DIR$/sources/vendor/psr/http-server-middleware" />
+      <path value="$PROJECT_DIR$/sources/vendor/psr/http-server-handler" />
+      <path value="$PROJECT_DIR$/sources/vendor/cebe/php-openapi" />
+      <path value="$PROJECT_DIR$/sources/vendor/justinrainbow/json-schema" />
+      <path value="$PROJECT_DIR$/sources/vendor/league/openapi-psr7-validator" />
+      <path value="$PROJECT_DIR$/sources/vendor/symfony/psr-http-message-bridge" />
+      <path value="$PROJECT_DIR$/sources/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/sources/vendor/laminas/laminas-diactoros" />
+      <path value="$PROJECT_DIR$/sources/vendor/laminas/laminas-zendframework-bridge" />
+      <path value="$PROJECT_DIR$/sources/vendor/nyholm/psr7" />
+      <path value="$PROJECT_DIR$/sources/vendor/php-http/message-factory" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.4" />

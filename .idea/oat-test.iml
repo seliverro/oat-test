@@ -6,18 +6,31 @@
       <sourceFolder url="file://$MODULE_DIR$/sources/tests" isTestSource="true" packagePrefix="App\Tests\" />
       <sourceFolder url="file://$MODULE_DIR$/tests" isTestSource="true" />
       <sourceFolder url="file://$MODULE_DIR$/sources/src" isTestSource="false" packagePrefix="App\" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/cebe/php-openapi" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/composer" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/dflydev/fig-cookies" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/doctrine/annotations" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/guzzlehttp/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/guzzlehttp/promises" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/guzzlehttp/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/justinrainbow/json-schema" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/laminas/laminas-diactoros" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/laminas/laminas-zendframework-bridge" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/league/openapi-psr7-validator" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/nyholm/psr7" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/php-http/message-factory" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/cache" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/container" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/event-dispatcher" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/http-factory" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/http-message" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/http-server-handler" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/http-server-middleware" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/psr/log" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/ralouphie/getallheaders" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/respect/validation" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/riverline/multipart-parser" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/sensio/framework-extra-bundle" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/stichoza/google-translate-php" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/cache" />
@@ -39,11 +52,13 @@
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/polyfill-intl-idn" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/polyfill-mbstring" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/polyfill-php73" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/psr-http-message-bridge" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/routing" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/service-contracts" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/var-dumper" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/var-exporter" />
       <excludeFolder url="file://$MODULE_DIR$/sources/vendor/symfony/yaml" />
+      <excludeFolder url="file://$MODULE_DIR$/sources/vendor/webmozart/assert" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

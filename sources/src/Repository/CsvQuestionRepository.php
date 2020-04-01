@@ -24,7 +24,7 @@ class CsvQuestionRepository implements IQuestionRepository
     private string $file = "storage_files\\questions.csv";
     private int $choiceCount = 3;
 
-    public function AddQuestion(Question $question)
+    public function addQuestion(Question $question)
     {
         if (count($question->choices) != $this->choiceCount) {
             throw new InvalidArgumentException(sprintf("CSV format supports only %d choices, found %d", $this->choiceCount, count($question->choices)));
@@ -49,7 +49,7 @@ class CsvQuestionRepository implements IQuestionRepository
         }
     }
 
-    public function GetQuestions()
+    public function getQuestions()
     {
         $row = 1;
         $result = array();

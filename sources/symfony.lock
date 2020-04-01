@@ -1,4 +1,10 @@
 {
+    "cebe/php-openapi": {
+        "version": "1.4.0"
+    },
+    "dflydev/fig-cookies": {
+        "version": "v2.0.1"
+    },
     "doctrine/annotations": {
         "version": "1.0",
         "recipe": {
@@ -23,8 +29,35 @@
     "guzzlehttp/psr7": {
         "version": "1.6.1"
     },
+    "justinrainbow/json-schema": {
+        "version": "5.2.9"
+    },
+    "laminas/laminas-diactoros": {
+        "version": "2.2.3"
+    },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.2"
+    },
+    "league/openapi-psr7-validator": {
+        "version": "0.7"
+    },
+    "nyholm/psr7": {
+        "version": "1.0",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "master",
+            "version": "1.0",
+            "ref": "7c0a9352a57376f04f5444e74565102c3a23d0c7"
+        },
+        "files": [
+            "./config/packages/nyholm_psr7.yaml"
+        ]
+    },
     "php": {
         "version": "7.4"
+    },
+    "php-http/message-factory": {
+        "version": "v1.0.2"
     },
     "psr/cache": {
         "version": "1.0.1"
@@ -35,7 +68,16 @@
     "psr/event-dispatcher": {
         "version": "1.0.0"
     },
+    "psr/http-factory": {
+        "version": "1.0.1"
+    },
     "psr/http-message": {
+        "version": "1.0.1"
+    },
+    "psr/http-server-handler": {
+        "version": "1.0.1"
+    },
+    "psr/http-server-middleware": {
         "version": "1.0.1"
     },
     "psr/log": {
@@ -43,6 +85,12 @@
     },
     "ralouphie/getallheaders": {
         "version": "3.0.3"
+    },
+    "respect/validation": {
+        "version": "1.1.31"
+    },
+    "riverline/multipart-parser": {
+        "version": "2.0.8"
     },
     "sensio/framework-extra-bundle": {
         "version": "5.2",
@@ -152,6 +200,9 @@
     "symfony/polyfill-php73": {
         "version": "v1.15.0"
     },
+    "symfony/psr-http-message-bridge": {
+        "version": "v2.0.0"
+    },
     "symfony/routing": {
         "version": "4.2",
         "recipe": {
@@ -177,5 +228,8 @@
     },
     "symfony/yaml": {
         "version": "v5.0.7"
+    },
+    "webmozart/assert": {
+        "version": "1.7.0"
     }
 }
